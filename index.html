@@ -13,10 +13,26 @@
         <button id="add-button">Add</button>
         <ul id="shopping-list"></ul>
     </div>
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <!-- Firebase App (the core Firebase SDK) -->
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <!-- Firebase Database -->
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
-    <!-- TODO: Add SDKs for Firebase products that you want to use -->
+    <!-- Firebase configuration and initialization -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCTJN9_w1PWnsG-zrVDDlwU9-il2florh8",
+            authDomain: "kaimono-list-9a0a4.firebaseapp.com",
+            databaseURL: "https://kaimono-list-9a0a4-default-rtdb.firebaseio.com",
+            projectId: "kaimono-list-9a0a4",
+            storageBucket: "kaimono-list-9a0a4.appspot.com",
+            messagingSenderId: "378738759119",
+            appId: "1:378738759119:web:d0b7ee243a2d4506e9eeba",
+            measurementId: "G-MLSN2J0NQD"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- Custom JavaScript -->
     <script src="app.js"></script>
 </body>
 </html>
